@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Odontólogo Maria Carvalho da Sousa</title>
+      <title>Odontólogo Maria Ana da Sousa</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content="Odontologia no rio de janeiro" />
       <meta property="og:type" content="website"/>
