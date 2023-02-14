@@ -1,3 +1,4 @@
+'use client'
 import './Opinions.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination} from 'swiper'
@@ -32,8 +33,8 @@ const Opinions = () => {
         loop={true}
         navigation
         pagination={{ clickable: true, dynamicBullets: true, }}
-        // onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide className="slide">
           <div className="slide-card">
