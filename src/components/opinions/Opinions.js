@@ -10,7 +10,7 @@ import 'swiper/css/pagination'
 const Opinions = () => {
   return (
     <section className="opinions section" id="opinions">
-      <h2 data-heading="Depoimentos" class="section__title">Opiniões de clientes</h2>
+      <h2 data-heading="Depoimentos" className="section__title">Opiniões de clientes</h2>
       <div className="container">
         <Swiper
         className="slider"
