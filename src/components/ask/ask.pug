@@ -1,0 +1,30 @@
+.ask#ask
+  .container
+    p(data-aos="fade-in" data-aos-duration="1800").ask__title.title SOLICITE UMA CONVERSA SEM COMPROMISSO:
+    div(data-aos="fade-in" data-aos-duration="1800" data-aos-delay="500").ask__box
+      .ask__image
+        img(src=require("../../../images/student_asking_question.svg"), alt="Dúvidas sobre criação de sites", title="Deixe seu número que entraremos em contato!") 
+      form.ask__form.form(action="https://formsubmit.co/contato@eformaliza.com" method="POST")
+        .form__label
+          label(for="name") Seu nome
+        .form__input 
+          input(type="text" minlength="3" placeholder="nome" name="name" required)
+        .form__label
+          label(for="name") Seu telefone
+        .form__input
+          input(type="number" placeholder="telefone" name="telefone" minlength="9" maxlength="13" required)
+        .form__label
+          label(for="email") Seu email
+        .form__input
+          input(type="email" placeholder="email" name="email" required)
+        .form__label
+          label(for="pergunta") Sua pergunta
+        .form__input
+          textarea(name="pergunta" placeholder="sua pergunta" required rows="5" cols="33" minlength="10")
+        input(type="hidden" name="_subject" value="Legal!!!!! Um novo e-mail de eformaliza.com!!!!")
+        input(type="hidden" name="_next" value="https://eformaliza.com/emailSent.html")
+        input(type="hidden" name="_template" value="table")
+        input(type="hidden" name="_captcha" value="false")
+        button.form__btn.btn(type="submit") Solicitar!  
+        
+

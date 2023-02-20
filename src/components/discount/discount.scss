@@ -1,0 +1,249 @@
+@import "../../styles/variables";
+
+.discount {
+  background-image: url("../../images/fundo_leve.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  color: #ffffff;
+  text-align: center;
+  font-family: $font-family-subtitle, sans-serif;
+  padding-top: 10px;
+
+  &__title {
+    margin: 60px auto 0;
+    font-size: 3.2em;
+  }
+
+  &__image {
+    width: 165px;
+    margin: 30px auto 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.timer { 
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  letter-spacing: 0.1em;
+
+  &__text {
+    
+    line-height: 1.5em;
+    font-size: 2em;
+    padding: 20px 0 0;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    letter-spacing: 0.1em;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 40px 0;
+    text-shadow: 0 0 4px white;
+   
+  }
+
+  &__title {
+    color:#ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 3px;
+    margin: 0 auto;
+    transition: all 0.3s linear 0.1s;
+    line-height: 1.3em;
+  }
+
+  &__link {
+    margin: 15px 0;
+  }
+
+  &__link::before {
+    content: '\27A4   ';
+    width: fit-content;
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+
+  &__link::after {
+    content: '  \27A4';
+    width: fit-content;
+    display: inline-block;
+    transform:rotate(180deg);
+    
+  }
+
+  &__link:hover {
+    text-shadow: 0 0 5px rgb(129, 7, 7);
+    transform: scale(1.05);
+    text-shadow: 0 0 2px white;
+    transition: all 0.3s linear 0.1s;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+}
+
+@media (max-width: 1030px) {
+  .discount {
+    // background-image: url("../../images/fundo_leve1.jpg");
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: repeat-x;
+    // color: #ffffff;
+    // text-align: center;
+    // font-family: $font-family-subtitle, sans-serif;
+    // padding-top: 10px;
+  
+    &__title {
+      margin: 50px auto 0;
+      font-size: 2.5em;
+    }
+  
+    &__image {
+      width: 130px;
+      margin: 40px auto 15px;
+  
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+  .timer { 
+    // color: white;
+    height: auto;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // padding-bottom: 50px;
+    letter-spacing: 0.05em;
+  
+    &__text {
+      
+      // line-height: 1.5em;
+      font-size: 1.6em;
+      // padding: 20px 0 0;
+      // text-transform: uppercase;
+    }
+  
+    &__time {
+      // letter-spacing: 0.1em;
+      font-size: 60px;
+      // font-weight: bold;
+      // padding: 5px 0;
+      margin: 30px 0;
+      // text-shadow: 0 0 4px white;
+     
+    }
+  
+    &__title {
+      // color:#ffffff;
+      font-size: 1.6em;
+      // text-transform: uppercase;
+      // width: fit-content;
+       padding: 1px;
+      // margin: 0 auto;
+      // transition: all 0.3s linear 0.1s;
+      // line-height: 1.5em;
+    }
+  
+  
+    // &__title:hover {
+    //   text-shadow: 0 0 5px rgb(129, 7, 7);
+    //   transform: scale(1.05);
+    //   text-shadow: 0 0 2px white;
+    //   transition: all 0.3s linear 0.1s;
+    //   border-top: 2px solid white;
+    //   border-bottom: 2px solid white;
+    // }
+    
+  }
+}
+
+@media (max-width: 700px) {
+  .discount {
+    // background-image: url("../../images/fundo_leve1.jpg");
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: repeat-x;
+    // color: #ffffff;
+    // text-align: center;
+    // font-family: $font-family-subtitle, sans-serif;
+    // padding-top: 10px;
+  
+    &__title {
+      margin: 30px auto 0;
+      font-size: 2em;
+    }
+  
+    &__image {
+      width: 130px;
+      margin: 25px auto 0;
+  
+      // img {
+      //   width: 100%;
+      // }
+    }
+  }
+  
+  .timer { 
+    overflow: hidden;
+    // color: white;
+    height: auto;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    padding-bottom: 20px;
+    // letter-spacing: 0.05em;
+  
+    &__text {
+      
+      // line-height: 1.5em;
+      font-size: 1.2em;
+      // padding: 20px 0 0;
+      // text-transform: uppercase;
+    }
+  
+    &__time {
+      // letter-spacing: 0.1em;
+      font-size: 40px;
+      line-height: 1.3em;
+      // font-weight: bold;
+      // padding: 5px 0;
+      margin: 15px 0;
+      // text-shadow: 0 0 4px white;
+     
+    }
+  
+    &__title {
+      // color:#ffffff;
+      font-size: 1.2em;
+      // text-transform: uppercase;
+      // width: fit-content;
+       padding: 1px;
+      // margin: 0 auto;
+      // transition: all 0.3s linear 0.1s;
+      // line-height: 1.5em;
+    }
+    
+    &__link:hover {
+      text-shadow: none;
+      transform: none;
+      text-shadow: none;
+      border-top: none;
+      border-bottom: none;
+    }
+    
+  }
+}

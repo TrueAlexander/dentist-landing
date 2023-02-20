@@ -1,0 +1,30 @@
+.ask#ask
+  .container
+    p(data-aos="fade-in" data-aos-duration="1800").ask__title.title SOLICITe UNA consultación SIN COMPROMISO:
+    div(data-aos="fade-in" data-aos-duration="1800" data-aos-delay="500").ask__box
+      .ask__image
+        img(src=require("../../../images/student_asking_question.svg"), alt="ask") 
+      form.ask__form.form(action="https://formsubmit.co/contato@eformaliza.com" method="POST")
+        .form__label
+          label(for="name") Su nombre
+        .form__input 
+          input(type="text" minlength="3" placeholder="nombre" name="name" required)
+        .form__label
+          label(for="name") Su teléfono
+        .form__input
+          input(type="number" placeholder="teléfono" name="telefone" minlength="9" maxlength="13" required)
+        .form__label
+          label(for="email") Su email
+        .form__input
+          input(type="email" placeholder="email" name="email" required)
+        .form__label
+          label(for="pregunta") Su pregunta
+        .form__input
+          textarea(name="pregunta" placeholder="su pregunta" required rows="5" cols="33" minlength="10")
+        input(type="hidden" name="_subject" value="Legal!!!!! Um novo e-mail de eformaliza.com!!!!")
+        input(type="hidden" name="_next" value="https://eformaliza.com/emailSentEsp.html")
+        input(type="hidden" name="_template" value="table")
+        input(type="hidden" name="_captcha" value="false")
+        button.form__btn.btn(type="submit") Solicitar!  
+        
+
