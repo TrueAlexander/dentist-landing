@@ -1,3 +1,3 @@
-https://eformaliza.com/
+doctor-landing.vercel.app
 
-Javascript / Pug  / SCSS
+Javascript / Pug / SCSS
