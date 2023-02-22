@@ -24,7 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.pug',
-      favicon: 'src/favicon.ico',
+      favicon: 'images/icons/favicon.ico',
     }),
     // new HtmlWebpackPlugin({
     //   filename: 'emailSent.html',

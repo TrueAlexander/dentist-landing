@@ -11,6 +11,7 @@ html(lang="en")
     meta(property="og:url" content="https://www.eformaliza.com/") 
     meta(property="og:description" content="Odontologia integrada no Rio de Janeiro. Sua saúde está em boas mãos") 
     meta(property="og:image" content="https://i.postimg.cc/RCWvsSxt/logo-principal.jpg")
+    link(rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css")
     script(defer src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver")
     //- <script async src="https://www.googletagmanager.com/gtag/js?id=G-63DZLREM66"></script>
     //- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-590042240"></script>
@@ -19,10 +20,10 @@ html(lang="en")
   body.preload#home(style="visibility: hidden;")
     include sections/header/header
     include sections/home/home
-    //- include sections/about/about
-    //- include sections/services/services
-    //- include sections/office/office
-    //- include sections/qualifications/qualifications
+    include sections/about/about
+    include sections/services/services
+    include sections/office/office
+    include sections/qualifications/qualifications
     //- include sections/opinions/opinions
     //- include sections/ask/ask
     //- include sections/footer/footer
