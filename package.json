@@ -40,6 +40,7 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "jquery": "^3.6.0",
+    "mixitup": "^3.3.1",
     "seamless-scroll-polyfill": "^2.1.8",
     "swiper": "^7.3.0",
     "yall-js": "^3.2.0"
