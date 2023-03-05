@@ -14,7 +14,9 @@ import 'aos/dist/aos.css'
 import 'animate.css'
 // import blogPost from './components/blogPost/blogPost'
 // import instaFeed from './components/instaFeed/instaFeed'
+import header from './sections/header/header'
 import opinions from './sections/opinions/opinions'
+import ask from './sections/ask/ask'
 // import office from './sections/office/office'
 
 
@@ -40,6 +42,8 @@ document.addEventListener("DOMContentLoaded", yall)
 // office()
 
 antiFouc()
+header()
 opinions()
+ask()
 
 
