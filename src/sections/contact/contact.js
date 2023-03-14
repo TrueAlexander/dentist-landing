@@ -1,5 +1,5 @@
 
-const ask = () => {
+const contact = () => {
   
 /*=============== INPUT ANIMATION ===============*/
 const inputs = document.querySelectorAll(".input")
@@ -22,4 +22,4 @@ inputs.forEach(input => {
 })
 }
 
-export default ask
+export default contact

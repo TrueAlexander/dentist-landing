@@ -1,3 +1,3 @@
-doctor-landing.vercel.app
+https://truealexander.github.io/dentist-landing/
 
 Javascript / Pug / SCSS

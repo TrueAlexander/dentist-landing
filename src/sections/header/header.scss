@@ -1,0 +1,124 @@
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  // width: 100px;
+  // height: 100vh;
+  width: 100vw;
+  height: 60px;
+  // background-color: var(--body-color);
+  background-color: rgba(255, 255, 255, 0.462);
+  // border-right: 1px solid var(--box-color);
+  border-bottom: 1px solid var(--skin-color);
+  transition: .5s;
+  z-index: 1000;
+}
+
+.nav__logo {
+  position: absolute;
+  left: 1.5rem;
+  // right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--skin-color);
+  text-align: center;
+  margin: auto;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__logo-text {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: var(--font-bold);
+  line-height: 45px;
+
+  img {
+    height: 30px;
+    display: block;
+  }
+}
+
+.nav__menu {
+  position: fixed;
+  top: 15px; 
+  // height: 60px;
+  // transform: rotate(-90deg) translateX(-100%);
+  // transform-origin: left top;
+  // width: 100vh;
+}
+
+.menu {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link {
+  height: 100%;
+  padding: 0 1rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  position: relative;
+  transition: .4s;
+}
+
+.btn__share {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.social__share {
+  font-size: 1.5rem;
+}
+
+.nav__toggle {
+  height: 32px;
+  width: 36px;
+  cursor: pointer;
+  position: fixed;
+  right: 1.5rem;
+  top: 2rem;
+  font-size: 1.2rem;
+  border-radius: .25rem;
+  background-color: var(--skin-color);
+  color: var(--title-color);
+  display: none;
+  justify-content: center;
+}
+
+.nav__close {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Active Link */
+.nav__link.active-link, .nav__link:hover {
+  color: var(--skin-color);
+}
+
+// .nav__link.active-link::after, .nav__link:hover::after {
+//   position: absolute;
+//   content: '';
+//   width: 6px;
+//   height: 6px;
+//   background-color: var(--skin-color);
+//   border-radius: 50%;
+//   bottom: 1.8rem;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+// }

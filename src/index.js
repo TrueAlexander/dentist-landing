@@ -16,7 +16,7 @@ import 'animate.css'
 // import instaFeed from './components/instaFeed/instaFeed'
 import header from './sections/header/header'
 import opinions from './sections/opinions/opinions'
-import ask from './sections/ask/ask'
+import contact from './sections/contact/contact'
 // import office from './sections/office/office'
 
 
@@ -44,6 +44,6 @@ document.addEventListener("DOMContentLoaded", yall)
 antiFouc()
 header()
 opinions()
-ask()
+contact()
 
 
