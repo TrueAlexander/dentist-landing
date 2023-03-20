@@ -65,7 +65,8 @@ margin-bottom: var(--mb-2);
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--skin-color);
+  background-color: var(--skin-color) !important;
+  // background-color: red;
 }
 
 
