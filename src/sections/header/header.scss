@@ -53,12 +53,12 @@
 }
 
 .nav__toggle {
-  height: 40px;
+  height: 30px;
   width: 40px;
   cursor: pointer;
   position: fixed;
   right: 2rem;
-  top: .3rem;
+  top: .6rem;
   font-size: 1.2rem;
   border-radius: .25rem;
   background-color: var(--skin-color);
@@ -69,7 +69,7 @@
   border: 1px solid black;
   i {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 30px;
   }
 }
 

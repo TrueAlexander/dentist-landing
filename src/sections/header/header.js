@@ -14,6 +14,7 @@ const header = () => {
     navToggle.style.display = ''
     navClose.style.display = 'none'
     headerNav.style.height = ''
+    headerNav.style.overflowY = 'hidden'
     navMenu.style.transform = ''
     body.style.overflowY = ''
   }
