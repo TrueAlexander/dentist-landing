@@ -22,6 +22,7 @@ const header = () => {
     navToggle.style.display = 'none'
     navClose.style.display = 'block'
     headerNav.style.height = '100%'
+    headerNav.style.overflowY = 'scroll'
     navMenu.style.transform = 'translate(-50%, 25%)'
     body.style.overflowY = 'hidden'
     navLinks.forEach(link => {

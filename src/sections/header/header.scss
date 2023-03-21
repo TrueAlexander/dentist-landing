@@ -10,7 +10,7 @@
 }
 
 .nav__logo {
-  position: absolute;
+  position: fixed;
   left: 2rem;
   top: 25px;
   transform: translateY(-50%);
@@ -39,11 +39,6 @@
   top: 17px;
 }
 
-// .menu {
-//   display: flex;
-//   border: 1px solid green;
-// }
-
 .nav__list {
   display: flex;
 }
@@ -57,25 +52,13 @@
   transition: .4s;
 }
 
-// .btn__share {
-//   position: absolute;
-//   bottom: 1.8rem;
-//   left: 0;
-//   right: 0;
-//   text-align: center;
-// }
-
-// .social__share {
-//   font-size: 1.5rem;
-// }
-
 .nav__toggle {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
   position: fixed;
   right: 2rem;
-  top: .5rem;
+  top: .3rem;
   font-size: 1.2rem;
   border-radius: .25rem;
   background-color: var(--skin-color);
@@ -84,14 +67,17 @@
   justify-content: center;
   z-index: 1001;
   border: 1px solid black;
-
+  i {
+    font-size: 25px;
+    line-height: 40px;
+  }
 }
 
 .nav__close {
   font-size: 2rem;
   position: absolute;
   top: .05rem;
-  right: 2.6rem;
+  right: 2.2rem;
   cursor: pointer;
   display: none;
   z-index: 1003;
