@@ -4,23 +4,32 @@ const header = () => {
   const navToggle = document.getElementById('nav-toggle')
   const navClose = document.getElementById('nav-close')
   const navMenu = document.querySelector('.nav__menu')
+  const body = document.querySelector('body')
+  const navLinks = document.querySelectorAll('.nav__link')
 
   /*===== MENU BURGER =====*/
   //open/close
+
+  const closeMenu = () => {
+    navToggle.style.display = ''
+    navClose.style.display = 'none'
+    headerNav.style.height = ''
+    navMenu.style.transform = ''
+    body.style.overflowY = ''
+  }
 
   navToggle.addEventListener('click', () => {
     navToggle.style.display = 'none'
     navClose.style.display = 'block'
     headerNav.style.height = '100%'
-    navMenu.style.transform = 'translate(-50%, 50%)'
+    navMenu.style.transform = 'translate(-50%, 25%)'
+    body.style.overflowY = 'hidden'
+    navLinks.forEach(link => {
+      link.addEventListener('click', closeMenu)
+    })
   })
 
-  navClose.addEventListener('click', () => {
-    navToggle.style.display = ''
-    navClose.style.display = 'none'
-    headerNav.style.height = ''
-    navMenu.style.transform = 'translate(-50%, -300px)'
-  })
+  navClose.addEventListener('click', closeMenu)
 
     /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
   //get all sections with an id
