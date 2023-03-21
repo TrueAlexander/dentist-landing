@@ -4,42 +4,46 @@ section.contact.section#contact
     .contact__content
         .contact__info
           .contact__card
-            i.uil.uil-envelope-edit.contact__card-icon
-            h3.contact__card-title Email
-            span.contact__card-data user@gmail.com
-            span.contact__button Write me 
-              i.uil.uil-arrow-right.contact__button-icon
-          .contact__card
             i.uil.uil-whatsapp.contact__card-icon
             h3.contact__card-title Whatsapp
             span.contact__card-data 21-2525-1563
-            span.contact__button Write me 
+            a(href="https://wa.me/5521967261434" target="_blank").contact__button Fale comigo 
               i.uil.uil-arrow-right.contact__button-icon
           .contact__card
-            i.uil.uil-facebook-messenger.contact__card-icon
-            h3.contact__card-title Messenger
-            span.contact__card-data user.fb1213
-            span.contact__button Write me 
+            i.uil.uil-instagram.contact__card-icon
+            h3.contact__card-title Instagram
+            span.contact__card-data @odontoMariaRJ
+            a(href="http://instagram.com" target="_blank").contact__button Inscreva-se 
+              i.uil.uil-arrow-right.contact__button-icon
+          .contact__card
+            i.uil.uil-envelope-edit.contact__card-icon
+            h3.contact__card-title Email
+            span.contact__card-data odonto@mariarj.com
+            a(href="mailto: odonto@mariarj.com").contact__button Escreva-me 
               i.uil.uil-arrow-right.contact__button-icon
     .contact__content
-      form.contact__form(action="") 
+      form.contact__form(action="https://formsubmit.co/caminante.msk@gmail.com" method="POST")
         .input__container
-          input.input(type="text" ) 
-          label(for="") Username
+          input.input(type="text" name="nome" minlength="3" required) 
+          label(for="nome") Seu Nome
           span Username
         .input__container
-          input.input(type="email")
-          label(for="") Email
+          input.input(type="email" name="email" required)
+          label(for="email") Email
           span Email
         .input__container
-          input.input(type="tel")
-          label(for="") Phone
+          input.input(type="number" name="telefone" minlength="9" maxlength="13" required)
+          label(for="telefone") Telefone
           span Phone
         .input__container.textarea
-          textarea.input(name="" id="" ) 
-          label(for="") Message
+          textarea.input(name="mensagem" required minlength="10") 
+          label(for="mensagem") Mensagem
           span Message
+        input(type="hidden" name="_subject" value="Mensagem de Cliente!")
+        //- input(type="hidden" name="_next" value="http://localhost:8080/")
+        input(type="hidden" name="_template" value="table")
+        input(type="hidden" name="_captcha" value="false")
         button.button(type="submit") 
           i.uil.uil-navigator.button__icon 
-          | Send Message
+          | Enviar
           

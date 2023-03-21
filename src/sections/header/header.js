@@ -1,24 +1,26 @@
 const header = () => {
-    /*=============== SHOW SIDEBAR ===============*/
-  const navMenu = document.getElementById('header')
+   
+  const headerNav = document.getElementById('header')
   const navToggle = document.getElementById('nav-toggle')
   const navClose = document.getElementById('nav-close')
+  const navMenu = document.querySelector('.nav__menu')
 
-  /*===== SIDEBAR SHOW =====*/
-  /* Validate If Constant Exists */
-  // if(navToggle) {
-  //   navToggle.addEventListener("click", () => {
-  //     navMenu.classList.add('show-sidebar')
-  //   })
-  // }
+  /*===== MENU BURGER =====*/
+  //open/close
 
-  /*===== SIDEBAR HIDDEN =====*/
-  /* Validate If Constant Exists */
-  // if(navClose) {
-  //   navClose.addEventListener("click", () => {
-  //     navMenu.classList.remove('show-sidebar')
-  //   })
-  // }
+  navToggle.addEventListener('click', () => {
+    navToggle.style.display = 'none'
+    navClose.style.display = 'block'
+    headerNav.style.height = '100%'
+    navMenu.style.transform = 'translate(-50%, 50%)'
+  })
+
+  navClose.addEventListener('click', () => {
+    navToggle.style.display = ''
+    navClose.style.display = 'none'
+    headerNav.style.height = ''
+    navMenu.style.transform = 'translate(-50%, -300px)'
+  })
 
     /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
   //get all sections with an id
@@ -28,8 +30,6 @@ const header = () => {
   window.addEventListener("scroll", navHighlighter)
 
   function navHighlighter () {
-    console.dir(navMenu)
-    navMenu.style.backgroundColor = "rgba(255, 255, 255, 1)"
     //get current scroll position
     let scrollY = window.scrollY
     //loop through the sections to get height, top and Id values
