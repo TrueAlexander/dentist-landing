@@ -151,11 +151,37 @@ button, input {
     column-gap: .5rem;
     background-color: var(--skin-color);
     color: var(--title-color);
+    color: white;
     padding: .5rem 1.4rem;
     border-radius: .25rem;
     font-weight: var(--font-medium);
     position: relative;
     z-index: 1;
+}
+
+.calendly-badge-widget {
+    left: 1.7rem !important;
+    bottom: 1.7rem !important;
+    width: fit-content !important; 
+    border-radius: .25rem !important;
+    width: 40px !important;
+}
+
+
+
+.calendly-badge-content {
+    border-radius: .7rem !important;
+    padding: 0 1rem !important;
+    font-family: var(--body-font) !important;
+    font-weight: 400 !important;
+    position: relative !important;
+    height: 40px !important;
+    transition: 0.5s;
+}
+
+.calendly-badge-content:hover {
+    background-color: rgb(0, 167, 204) !important;
+    transition: 0.5s;
 }
 
 .button::after {

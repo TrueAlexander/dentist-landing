@@ -41,10 +41,11 @@
   &__social {
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
+    color: var(--skin-color) !important;
   }
   
   &__social:hover {
-    color: var(--skin-color);
+    color: var(--hover-color) !important;
   }
   
   &__copy {
