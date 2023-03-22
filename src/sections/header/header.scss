@@ -12,7 +12,7 @@
 .nav__logo {
   position: fixed;
   left: 2rem;
-  top: 25px;
+  top: 30px;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -95,6 +95,10 @@
     height: 50px;
   }
 
+  .nav__logo {
+    top: 25px;
+  }
+
   .nav__menu {
     position: relative;
     width: fit-content;
@@ -121,8 +125,6 @@
 
   .nav__close {
     display: none;
- 
-
   }
 
   .nav__toggle {
