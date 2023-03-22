@@ -6,7 +6,7 @@ const header = () => {
   const navMenu = document.querySelector('.nav__menu')
   const body = document.querySelector('body')
   const navLinks = document.querySelectorAll('.nav__link')
-  // const container = document.querySelector('.container')
+  const container = document.querySelector('.header .container')
 
   /*===== MENU BURGER =====*/
   //open/close
@@ -18,7 +18,7 @@ const header = () => {
     headerNav.style.overflowY = 'hidden'
     navMenu.style.transform = ''
     body.style.overflowY = ''
-    // container.style.overflow = 'hidden'
+    container.style.overflowY = ''
   }
 
   navToggle.addEventListener('click', () => {
@@ -28,7 +28,7 @@ const header = () => {
     headerNav.style.overflowY = 'scroll'
     navMenu.style.transform = 'translate(-50%, 25%)'
     body.style.overflowY = 'hidden'
-    // container.style.overflow = 'auto'
+    container.style.overflowY = 'auto'
     navLinks.forEach(link => {
       link.addEventListener('click', closeMenu)
     })
