@@ -91,10 +91,15 @@
 
 @media (max-width: 700px) {
   .card {
-    padding: 10px 7px 25px;
+    padding: 10px 7px 20px;
     display: block;
-    margin: 0 0px 50px;
+    margin: 0 0px 30px;
 
+    &__title {
+      font-size: 1.2em;
+      line-height: 1.3em;
+    }
+  
     &__photo {
       margin: 10px auto 5px;
       max-width: 520px;

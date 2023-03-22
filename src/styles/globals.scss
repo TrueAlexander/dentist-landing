@@ -117,12 +117,12 @@ button, input {
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;   
 }
 
 .grid {
     display: grid;   
 }
-
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -211,6 +211,7 @@ button, input {
 
 
 /*========== BREAKPOINTS ==========*/
+
 /* For Large Devices */
 @media screen and (max-width: 1408px) {
     .container {
@@ -219,173 +220,24 @@ button, input {
     }
 }
 
-@media screen and (max-width: 1216px) {
-
-    .office__container {
-        grid-template-columns: repeat(2, 330px);
-        gap: 2.5rem;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .container {
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
     }
-
-    .qualification__container {
-        grid-template-columns: repeat(2, 290px);
-    }
-
-    .skills__container {
-        grid-template-columns: 340px 300px;
-    }
-
-    .skills__list {
-        row-gap: 1.7rem;
-    }
-
-    .office__img {
-        margin-bottom: var(--mb-0-75);
-    }
-
-    .office__title {
-        margin-bottom: var(--mb-0-25);
-    }
-
-    // .services__container {
-    //     grid-template-columns: repeat(3, 220px);
-    // }
-
-    .testimonial__card {
-        padding: 1.25rem 1.5rem;
-    }
-
-    .portfolio__item-details {
-        margin-bottom: var(--mb-1-5);
-    }
-
-    .details__info li {
-        margin-bottom: var(--mb-0-5);
-    }
-
-    .details__title {
-        margin-bottom: var(--mb-0-75);
-    }
 }
 
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
+    .section {
+        padding: 2.5rem 0 2rem;
+    }
 
     .button {       
         column-gap: .5rem;
         padding: .2rem .7rem;
         border-radius: .25rem;
     }
-
-    // .about__img {
-    //     width: 250px;
-    // }
-
-    .qualification__container {
-        grid-template-columns: 290px;
-        row-gap: 3rem;
-    }
-
-    .skills__container {
-        grid-template-columns: 300px;
-        row-gap: 3rem;
-    }
-
-    .office__container {
-        grid-template-columns: 330px;
-    }
-
-    // .services__container {
-    //     grid-template-columns: repeat(2, 1fr);
-    //     gap: 1.5rem;
-    // }
-
-    // .services__content {
-    //     padding: 3.5rem .5rem 1.25rem 1.5rem;
-    // }
-
-    // .services__icon {
-    //     font-size: 1.5rem;
-    // }
-
-    .contact__container {
-        grid-template-columns: 360px;
-        row-gap: 3rem;
-    }
-
-    .footer__container {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 3rem;
-      
-    }
-
-    .footer__socials {
-        justify-self: start;
-    }
-
-    .footer__links {
-        flex-direction: column;
-        row-gap: 1.5rem;
-    }
-
-    .footer__bg {
-        padding: 2rem 0 3rem;
-    }
-
-    .footer__copy {
-        margin-top: var(--mb-3);
-    }
-
-    .portfolio__popup-inner {
-        width: 420px;
-        padding: 2.8rem 1.5rem 2.5rem;
-    }
-
-    .portfolio__popup-content {
-        grid-template-columns: 1fr;
-        row-gap: 1.6rem;
-    }
-
-    .details__title {
-        font-size: var(--normal-font-size);
-    }
-
-    .portfolio__popup-close {
-        top: .5rem;
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-   
-    
-
-    // .services__modal-content {
-    //     padding: 4.5rem 1.5rem 2.5rem;
-    // }
-
-    // .services__modal-description {
-    //     padding: 0;
-    // }
-
-    .office__container,
-    .contact__container {
-        grid-template-columns: 300px;
-    }
-
-    .footer__container {
-        grid-template-columns: 1fr;
-    }
-
-    .footer__links {
-        justify-self: flex-start;
-    }  
 }
 
 /* For Small Devices */
@@ -394,29 +246,4 @@ button, input {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
     }
-
-  
-
-    .skills__container,
-    .qualification__container,
-    .office__container,
-    .contact__container {
-        grid-template-columns: 1fr;
-    }
-
-    .skills__title {
-        font-size: var(--normal-font-size);
-    }
-
-    .office__item {
-    font-size: var(--small-font-size);
-    }
-
-    // .services__container {
-    //     grid-template-columns: max-content;
-    // }
-
-    // .services__content {
-    //     padding-right: 3.5rem;
-    // }
 }

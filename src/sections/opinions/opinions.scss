@@ -69,4 +69,8 @@ margin-bottom: var(--mb-2);
   // background-color: red;
 }
 
-
+@media screen and (max-width: 1024px) { 
+  .testimonial__card {
+    padding: 1.25rem 1.5rem;
+  }
+}

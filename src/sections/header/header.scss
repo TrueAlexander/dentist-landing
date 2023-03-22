@@ -9,6 +9,10 @@
   z-index: 1000;
 }
 
+.header .container {
+  height: 100%; 
+}
+
 .nav__logo {
   position: fixed;
   left: 2rem;
@@ -37,6 +41,7 @@
   position: fixed;
   left: 100px;
   top: 17px;
+  z-index: 1004;
 }
 
 .nav__list {

@@ -3,7 +3,7 @@
 .office {  
   &__container {
     grid-template-columns: repeat(3, 330px);
-    gap: 2.7rem;
+    gap: 3rem;
     justify-content: center;
     padding-top: 4rem;
   }
@@ -16,5 +16,29 @@
 
   &__img {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 1216px) {
+  .office {
+    &__container {
+      grid-template-columns: repeat(2, 330px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .office {
+    &__container {
+      grid-template-columns: 460px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .office {
+    &__container {
+      grid-template-columns: 1fr;
+    }
   }
 }

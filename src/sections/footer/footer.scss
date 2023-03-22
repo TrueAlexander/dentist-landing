@@ -61,7 +61,44 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+    
+    }
 
+    &__socials {
+        justify-self: start;
+    }
+
+    &__links {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    &__bg {
+        padding: 2rem 0 3rem;
+    }
+
+    &__copy {
+        margin-top: var(--mb-3);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+   
+  .footer__container {
+      grid-template-columns: 1fr;
+  }
+
+  .footer__links {
+      justify-self: flex-start;
+  }  
+}
 
 
 

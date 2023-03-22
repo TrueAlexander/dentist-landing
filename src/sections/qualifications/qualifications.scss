@@ -70,3 +70,21 @@
   color: var(--skin-color);
 }
 
+@media screen and (max-width: 1024px) {
+  .qualification__container {
+    grid-template-columns: repeat(2, 290px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .qualification__container {
+    grid-template-columns: 290px;
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .qualification__container {
+    grid-template-columns: 1fr;
+  }
+}

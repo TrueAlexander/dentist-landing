@@ -157,3 +157,28 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    &__container {
+      grid-template-columns: 360px;
+      row-gap: 3rem;
+    }
+  
+    &__card {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact__container {
+    grid-template-columns: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+}
